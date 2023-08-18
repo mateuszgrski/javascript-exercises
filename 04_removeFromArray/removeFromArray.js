@@ -1,13 +1,9 @@
-const removeFromArray = function(array, ...args) {
-    array.forEach(
-        (arrayElement) => {
-        if (args.includes(arrayElement)){
-            array.splice(array.indexOf(arrayElement), 1)
-            console.log(array)
-        }
-    })
-    return array
-};
+/*
+function removeFromArray(array, ...args) {
+    return array.filter((item) => !args.includes(item))
+} */
+
+const removeFromArray = (array, ...args) => array.filter((item) => !args.includes(item))
 
 
 
